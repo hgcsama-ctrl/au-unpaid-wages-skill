@@ -47,21 +47,37 @@ If there is no case folder, run the intake below.
 
 ## Phase 1: intake and case file
 
-Create the folder with `scripts/new_case.sh <folder>` (or copy `assets/templates/` by hand). Then
-fill the header of `timeline.md` from the interview. Ask only what you cannot find in documents:
+Create the folder with `scripts/new_case.sh <folder>` (or copy `assets/templates/` by hand). For
+this phase you only need `timeline.md`, `evidence-index.md` and `calculations.md`; leave the
+letter templates in `drafts/` until Phase 4.
 
-- Who: the user's name as it appears on invoices or payslips, phone, email (one email account
-  that holds all the evidence; confirm which one before touching mail tools).
-- Employer: legal name, ABN (ask the user to look it up at abr.business.gov.au), workplace address,
-  the manager's name and how they communicated (WeChat, WhatsApp, SMS, email).
-- The work: dates, days per week, usual start/finish, duties, agreed rate, how the user was told to
-  bill (payslips? invoice under own ABN? cash?).
-- Money: what was invoiced or promised, what was paid, when it was due.
-- Chasing so far: every time the user asked for the money, by what channel, and what happened.
-- Status now: still working there? Student visa? Needs an interpreter?
+The person asking is often anxious and may fear retaliation or visa trouble, so the first reply
+should calm, not interrogate. Lead with the one urgent action (back up the chat), explain the path
+in three steps, then ask for facts in **three or four grouped questions**, not a form. Ask only
+what you cannot find in documents, in roughly this priority:
 
-Write what you learned into `timeline.md`, `evidence-index.md` and `calculations.md`. Mark every
-number as either "user stated", "derived" or "to verify".
+1. **The money**: invoices or payslips (number, period, amount), what was paid and when, how they
+   were delivered (email address, chat, in person).
+2. **The employer**: legal name and ABN (user looks it up at abr.business.gov.au), workplace
+   address, manager's name, which chat app or email they used.
+3. **The arrangement**: who set days and start times; where the "invoice us with your ABN"
+   instruction was given (in writing?); any contract; usual hours and duties.
+4. **The user**: name as on invoices, phone, the one email account that holds the evidence
+   (confirm it before touching mail tools), still working there?, visa type, interpreter needed?
+
+Always record the year with every date ("March" is not a date; "2026-03-02" is). Write what you
+learned into `timeline.md`, `evidence-index.md` and `calculations.md`, marking every number as
+"user stated", "derived" or "to verify".
+
+### If the user is on a visa
+
+Fear of visa consequences is the main reason exploited workers never claim. Say, in plain words,
+that FWO has an arrangement with the Department of Home Affairs (the Assurance Protocol) under
+which a visa holder who reports workplace exploitation to FWO is generally not referred for visa
+cancellation merely for having breached a work-related condition, subject to its terms, and that
+the user should confirm the current terms with FWO (13 13 94) or JobWatch before relying on it.
+Student work-hour caps are a separate question; do not speculate about them in the case file.
+Visa matters never appear in letters to the employer.
 
 ## Phase 2: evidence
 
@@ -92,8 +108,10 @@ Keep two figures side by side in `calculations.md`:
 - **Invoice / agreed-rate basis**: hours × agreed rate, minus what was paid. Undisputed floor.
 - **Employee basis**: hours × the relevant award rate (casual loading, overtime, weekend penalties,
   minimum engagement), plus superannuation. Only after the user has run the FWO Pay and Conditions
-  Tool for the actual award and classification. Say plainly that super is generally chased through
-  the ATO, not FWO, and that the award choice is a judgment call.
+  Tool for the actual award and classification. `references/award-hints.md` maps common jobs to
+  the award that usually applies, so you can name a candidate for the user to check rather than
+  leaving them to guess. Say plainly that super is generally chased through the ATO, not FWO, and
+  that the award choice is a judgment call.
 
 Never present the employee-basis number as settled. Present it as "primary claim, to be confirmed"
 with the invoice figure as the alternative.
@@ -143,6 +161,7 @@ from now on they do not contact the employer directly.
   character limits and the pitfalls observed on the live form.
 - `references/employee-vs-contractor-evidence.md`: what sham contracting looks like in evidence.
 - `references/escalation-ladder.md`: templates' order, agencies, phone numbers, small claims.
+- `references/award-hints.md`: which modern award usually covers common student and casual jobs.
 - `assets/templates/`: case file skeleton, letters, FWO field sheet, handover note.
 - `scripts/new_case.sh`: scaffold a case folder. `scripts/check_lengths.py`: check draft text
   against FWO field limits before pasting.

@@ -17,11 +17,11 @@
 
 ## Timeline
 
-> Times in local time (state the zone). ✅ = backed by an exported record (see evidence-index.md).
+> Dates as YYYY-MM-DD, times in local time (state the zone). ✅ = backed by an exported record (see evidence-index.md).
 
 | Date / time | Event | Evidence |
 |---|---|---|
-| **Engagement: <start> – <end>** | <duties, usual hours, agreed rate, how billing was arranged> | |
+| **Engagement: <YYYY-MM-DD> – <YYYY-MM-DD>** | <duties, usual hours, agreed rate, how billing was arranged> | |
 | | **Chaser ①** | E-01 |
 | | | |
 
